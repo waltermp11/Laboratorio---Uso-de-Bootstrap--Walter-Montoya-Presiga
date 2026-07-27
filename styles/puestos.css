@@ -35,13 +35,24 @@
     border-radius: 50%;
 }
 
-.btn.btn-primary.mt-3 {
+.btn.btn-primary {
     width: 150px;
+    background-color: #fe3e00;
+    border-color: transparent;
+    transition: transform 0.4s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #1d150b;
+    border-color: transparent;
+    transform: translateY(-5px)
 }
 
 
 
-.card-body.d-flex.flex-column.justify-content-between , .card-body.d-flex.flex-column.justify-content-between div .card-title, .card-body.d-flex.flex-column.justify-content-between div .cart-text  {
+.card-body.d-flex.flex-column.justify-content-between,
+.card-body.d-flex.flex-column.justify-content-between div .card-title,
+.card-body.d-flex.flex-column.justify-content-between div .cart-text {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
