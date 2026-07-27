@@ -1,0 +1,61 @@
+:root {
+
+    --bg-color-page: #fFFFFf;
+    --bg-color-navbar: #fe3e00;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+
+    background-color: var(--bg-color-navbar) !important;
+    color: var(--bg-color-page) !important
+}
+
+
+
+.navbar-brand {
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--bg-color-page)
+}
+
+.navbar-brand:hover {
+    color: var(--bg-color-page);
+}
+
+
+.nav-item a {
+    color: var(--bg-color-page) !important;
+    font-size: 1.3rem;
+}
+
+.banner {
+
+    height: 800px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+
+}
+
+.carousel-item img {
+    width: 600px !important;
+    height: 650px !important;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.bg-dark {
+    background-color: #1d150b !important;
+
+}
