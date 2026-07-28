@@ -4,10 +4,11 @@
 .ubicacion {
 
     background-color: #1d150b !important;
-    color: white;
+    color: #FFC000;
     margin: 30px 0px;
     padding: 5rem;
     display: flex;
+    border-radius: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,14 @@
 
 }
 
+.ubicacion p {
+    color: white !important;
+}
+
+
+
 .card.h-100.shadow-sm {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,12 +36,30 @@
     border-radius: 10px;
 }
 
+.etiqueta-nuevo {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    background-color: #FFC000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor:pointer;
+    padding:2rem 0.3rem
+
+}
+
 .card.h-100.shadow-sm img {
     margin: 30px 0px;
     height: 50px;
     width: fit-content;
     border-radius: 50%;
 }
+
 
 .btn.btn-primary {
     width: 150px;

@@ -1,61 +1,44 @@
 :root {
-
-    --bg-color-page: #fFFFFf;
-    --bg-color-navbar: #fe3e00;
+    --bg-color-page: #FFC000;
+    --bg-color-navbar: #1d150b;
 }
 
-.navbar.navbar-expand-lg.bg-body-tertiary {
 
+.navbar.bg-body-tertiary {
     background-color: var(--bg-color-navbar) !important;
-    color: var(--bg-color-page) !important
 }
-
-
 
 .navbar-brand {
-
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: var(--bg-color-page)
-}
-
-.navbar-brand:hover {
-    color: var(--bg-color-page);
-}
-
-
-.nav-item a {
     color: var(--bg-color-page) !important;
-    font-size: 1.3rem;
+    padding:1.8rem
+}
+
+.nav-item .nav-link {
+    color: var(--bg-color-page) !important;
+    font-size: 1.1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: #ffffff !important;
 }
 
 .banner {
-
-    height: 800px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-
-
+    min-height: 500px;
+    height: 70vh;
+    overflow: hidden;
 }
 
-.carousel-item img {
-    width: 600px !important;
-    height: 650px !important;
-    border-radius: 30px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-
+.hero-overlay {
+    background-color: rgba(29, 21, 11, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 192, 0, 0.3);
+    max-width: 700px;
 }
 
-.bg-dark {
-    background-color: #1d150b !important;
 
+footer.bg-dark {
+    background-color: var(--bg-color-navbar) !important;
 }
