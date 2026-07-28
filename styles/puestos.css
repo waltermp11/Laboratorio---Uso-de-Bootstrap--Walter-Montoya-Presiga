@@ -1,5 +1,3 @@
-:root {}
-
 
 .ubicacion {
 
@@ -82,4 +80,17 @@
     display: flex;
     justify-content: center !important;
     align-items: center !important;
+}
+
+@media (max-width: 768px) {
+    
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+
+   
+    section, article {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
 }

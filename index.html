@@ -7,14 +7,14 @@
     <title>Inicio - Sabores de la Plaza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Iconos de Bootstrap opcionales para el footer -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/index-styles.css">
 </head>
 
 <body>
 
-    <!-- 1. BARRA DE NAVEGACIÓN -->
+    
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -44,32 +44,59 @@
     </header>
 
     
-    <section class="banner position-relative text-center text-white d-flex align-items-center justify-content-center">
+    <section class="container my-4 my-lg-5">
+    <div class="row align-items-center g-4  p-4 p-md-5 rounded-4 shadow-sm ">
         
-        <div class="carousel slide position-absolute w-100 h-100 top-0 start-0" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                    <img src="./assets/img/5_files/carne-frita-champinones-arroz_140725-9684.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Banner 1">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="./assets/img/5_files/chuleta-cerdo-parrilla-patatas-fritas-ensalada-fresca_1150-23159.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Banner 2">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="./assets/img/5_files/comida-deliciosa-plato-restaurante-gourmet-comida-fresca-almuerzo-cena_919857-2154.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Banner 3">
-                </div>
+       
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+            <h1 class="display-5 fw-bold text-light mb-3">
+                La tradición que <span class="text-warning">enamora al paladar</span>
+            </h1>
+            <p class="fs-5 text-light mb-4">
+                Descubre los mejores platos, insumos frescos y la calidez artesanal de los <strong>Sabores de la Plaza.</strong>
+            </p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <a href="./productos.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 shadow-sm">Ver Productos</a>
             </div>
         </div>
 
         
-        <div class="hero-overlay position-relative z-1 p-4 rounded-4 my-5 mx-3 max-w-lg">
-            <h1 class="display-4 fw-bold text-warning mb-3">La tradición que enamora al paladar</h1>
-            <p class="fs-5 mb-4">Descubre los mejores platos, insumos frescos y la calidez artesanal de los <strong>Sabores de la Plaza.</strong></p>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="./productos.html" class="btn btn-warning btn-lg fw-bold text-dark px-4">Ver Productos</a>
-                <a href="./contacto.html" class="btn btn-outline-light btn-lg px-4">Contáctanos</a>
+        <div class="col-12 col-lg-6">
+            <div id="heroCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel" data-bs-interval="3000">
+                
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner" style="max-height: 400px;">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/5_files/carne-frita-champinones-arroz_140725-9684.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Carne frita con champiñones">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/5_files/chuleta-cerdo-parrilla-patatas-fritas-ensalada-fresca_1150-23159.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Chuleta de cerdo a la parrilla">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/5_files/comida-deliciosa-plato-restaurante-gourmet-comida-fresca-almuerzo-cena_919857-2154.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Plato gourmet">
+                    </div>
+                </div>
+
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
 
     
     <section class="container my-5">

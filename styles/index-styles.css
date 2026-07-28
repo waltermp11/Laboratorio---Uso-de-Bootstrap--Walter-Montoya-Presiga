@@ -1,6 +1,6 @@
 :root {
-    --bg-color-page: #FFC000;
-    --bg-color-navbar: #1d150b;
+    --bg-color-page: #FFC000;   /* Amarillo */
+    --bg-color-navbar: #1d150b; /* Café */
 }
 
 
@@ -12,7 +12,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--bg-color-page) !important;
-    padding:1.8rem
+    padding: 1.8rem;
 }
 
 .nav-item .nav-link {
@@ -24,21 +24,70 @@
     color: #ffffff !important;
 }
 
-.banner {
-    min-height: 500px;
-    height: 70vh;
-    overflow: hidden;
-}
 
-.hero-overlay {
-    background-color: rgba(29, 21, 11, 0.75);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 192, 0, 0.3);
-    max-width: 700px;
+.hero-contenedor {
+    background-color: var(--bg-color-navbar) !important;
+    color: #ffffff; /* Texto general en blanco */
+    border: 1px solid rgba(255, 192, 0, 0.2);
 }
 
 
+.hero-contenedor h1 span,
+.hero-contenedor strong {
+    color: var(--bg-color-page) !important;
+}
+
+.row.align-items-center.g-4.p-4.p-md-5.rounded-4.shadow-sm {
+    margin-top: 30px;
+    background-color: #1d150b;
+}
+
+
+.hero-contenedor .btn-warning {
+    background-color: var(--bg-color-page) !important;
+    border-color: var(--bg-color-page) !important;
+    color: var(--bg-color-navbar) !important;
+}
+
+.hero-contenedor .btn-warning:hover {
+    background-color: #e0a800 !important;
+    color: var(--bg-color-navbar) !important;
+}
 footer.bg-dark {
     background-color: var(--bg-color-navbar) !important;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-contenedor {
+        padding: 1.5rem !important;
+    }
+
+    .hero-contenedor h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+    }
+
+    .hero-contenedor p {
+        font-size: 1rem !important;
+    }
+
+    .hero-contenedor .btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    section, article {
+        margin-top: 2.5rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
+
+    footer .row > div {
+        margin-bottom: 1.5rem;
+    }
 }

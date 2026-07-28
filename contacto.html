@@ -1,62 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contacto - Sabores de la Plaza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-
-<body>
-
-   <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/index-styles.css">
 </head>
 
 <body>
 
+  
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Sabores de la Plaza </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <a class="navbar-brand" href="./index.html">Sabores de la Plaza</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-5">
+                    <ul class="navbar-nav ms-auto gap-lg-4">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                            <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/puestos.html">Puestos</a>
+                            <a class="nav-link" href="./puestos.html">Puestos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/productos.html">Productos</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contacto.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <main class="container my-5">
+
+        
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Contacto y Pedidos</h1>
+            <p class="text-muted">Escríbenos tu duda o haz tu pedido directamente al puesto que prefieras.</p>
+        </div>
+
+        
+        <section class="row mb-5">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                <form class="p-4 bg-light rounded-4 shadow-sm border">
+                    
+                    <!-- Campo Nombre -->
+                    <div class="mb-3">
+                        <label for="nombreCompleto" class="form-label fw-bold">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombreCompleto" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="contactoCliente" class="form-label fw-bold">Teléfono o Correo electrónico</label>
+                        <input type="text" class="form-control" id="contactoCliente" placeholder="Ej. 3001234567 o cliente@correo.com" required>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="puestoInteres" class="form-label fw-bold">Puesto de interés</label>
+                        <select class="form-select" id="puestoInteres" required>
+                            <option value="" selected disabled>Selecciona un puesto...</option>
+                            <option value="1">Puesto 1: Comida Criolla y Sazones</option>
+                            <option value="2">Puesto 2: Frutas y Verduras Orgánicas</option>
+                            <option value="3">Puesto 3: Panadería y Postres Artesanales</option>
+                            <option value="4">Puesto 4: Jugos y Batidos Naturales</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo Mensaje -->
+                    <div class="mb-4">
+                        <label for="mensajePedido" class="form-label fw-bold">Mensaje o Pedido</label>
+                        <textarea class="form-control" id="mensajePedido" rows="4" placeholder="Escribe aquí tu pedido o consulta..." required></textarea>
+                    </div>
+
+                    
+                    <button type="submit" class="btn btn-warning w-100 fw-bold fs-5 py-2">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        
+        <section class="row my-5">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Preguntas Frecuentes</h2>
+                    <p class="text-muted">Resuelve tus dudas, pero en bombas 💣💥</p>
+                </div>
+
+                <div class="accordion" id="accordionFAQ">
+                    
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuáles son los horarios de atención de la plaza?
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Atendemos de <strong>martes a domingo de 8:00 AM a 6:00 PM</strong>. Los días festivos abrimos en horario especial que anunciamos en nuestras redes sociales.
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Hacen entregas a domicilio?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                ¡Sí! Varios puestos cuentan con servicio de entrega local. Puedes hacer tu solicitud a través del formulario indicando tu dirección en el mensaje.
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cules son los medios de pago aceptados?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Aceptamos pagos en efectivo, transferencias bancarias locales, Nequi, Daviplata y tarjetas de débito/crédito en la mayoría de nuestros locales.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Sabores de la Plaza</h5>
+                    <p>El punto de encuentro con la mejor tradición gastronómica local.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Navegación</h5>
+                    <p><a href="./index.html" class="text-light text-decoration-none">Inicio</a></p>
+                    <p><a href="./puestos.html" class="text-light text-decoration-none">Puestos</a></p>
+                    <p><a href="./productos.html" class="text-light text-decoration-none">Productos</a></p>
+                    <p><a href="./contacto.html" class="text-light text-decoration-none">Contacto</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Contacto</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> Plaza Principal, Local 12</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> info@saboresdelaplaza.com</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i> +57 300 123 4567</p>
+                </div>
+            </div>
+
+            <hr class="mb-4 mt-4 text-white-50">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start mb-0">
+                        © 2026 <strong>Sabores de la Plaza</strong>. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
 </html>
